@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* background-color: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%); */
+}
+
+body {
+  height: 100vh;
+  font-family: Overpass;
+  font-size: 15px;
+  margin: 2rem;
+  background-color: black;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.main,
+.thankYou {
+  max-width: 25rem;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+
+.main img {
+  background-color: hsl(217, 11%, 23%);
+  padding: 0.75rem;
+  border-radius: 50%;
+}
+
+.title {
+  margin: 1.75rem 0 1rem;
+}
+
+.main p,
+.thankYou h2 + p {
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 1rem;
+}
+
+.rating ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.main ul li .btn {
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(217, 11%, 23%);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main ul li .btn:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.main ul li .btn:focus {
+  background-color: hsl(217, 12%, 63%);
+}
+
+.btnSubmit {
+  display: block;
+  margin: auto;
+  background-color: hsl(25, 97%, 53%);
+  width: 100%;
+  padding: 0.6rem 0;
+  border-radius: 3rem;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.btnSubmit:hover {
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+.thankYou {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.hide {
+  display: none;
+}
+
+.thankYou img {
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.ratingPara {
+  width: max-content;
+  margin: auto;
+  background-color: hsl(217, 11%, 23%);
+  padding: 0.2rem 1rem;
+  border-radius: 3rem;
+  color: hsl(25, 97%, 53%);
+}
+
+.ratingPara + h2 {
+  width: max-content;
+  margin: 2rem auto 1rem;
+}
+
+.ratingPara ~ p {
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+  .main,
+  .thankYou {
+    max-width: 21rem;
+    padding: 1rem;
+  }
+
+  .rating ul {
+    margin: 0.5rem 0;
+  }
+
+  .main ul li .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btnSubmit {
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+  }
+}
